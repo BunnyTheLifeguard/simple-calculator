@@ -7,7 +7,9 @@ const divide = (a, b) => a / b;
 
 const display = document.querySelector('#display');
 
-document.querySelectorAll('.button').forEach(button =>
-  button.addEventListener('click', (e) => display.value = (e.target.innerHTML)));
+const value = document.querySelectorAll('.button').forEach(button =>
+  button.addEventListener('click', (e) => e.target.innerHTML));
+
+console.log(value);
 
 operate(add, 40, 2);
