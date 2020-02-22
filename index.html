@@ -7,24 +7,28 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="calculator">
-      <input type="text", id="display">
-      <button id="9", class="button", value='9'>9</button>
-      <button id="8", class="button", value='8'>8</button>
-      <button id="7", class="button", value='7'>7</button>
-      <button id="add", class="button">+</button>
-      <button id="6", class="button", value='6'>6</button>
-      <button id="5", class="button", value='5'>5</button>
-      <button id="4", class="button", value='4'>4</button>
-      <button id="subtract", class="button">-</button>
-      <button id="3", class="button", value='3'>3</button>
-      <button id="2", class="button", value='2'>2</button>
-      <button id="1", class="button", value='1'>1</button>
-      <button id="multiply", class="button">*</button>
-      <button id="clear", class="button">Clear</button>
-      <button id="0", class="button", value='0'>0</button>
-      <button id="result", class="button">=</button>      
-      <button id="divide", class="button">/</button>
+  <div class="calculator">
+      <!-- <input type="text", id="display", disabled> -->
+      <div class="display">0</div> 
+      <div class="keys">
+        <button class="operator" data-action="add">+</button>
+        <button class="operator" data-action="subtract">-</button>
+        <button class="operator" data-action="multiply">*</button>
+        <button class="operator" data-action="divide">/</button>  
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button data-action="decimal">.</button>
+        <button>0</button>
+        <button data-action="clear">AC</button>
+        <button class="result" data-action="calculate">=</button>
+      </div>    
   </div>
 </body>
 <script src="script.js"></script>

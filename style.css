@@ -1,14 +1,27 @@
-#calculator {
-  border: 1px solid red;
-  padding: 50px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
   width: 500px;
-  height: 750px;
+  height: 600px;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keys {
+  display: grid;
+  width: 500px;
+  height: 500px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 
-#display {
+.display {
+  border: 1px solid black;
   grid-column: 1 / 5;
   font-size: xx-large;
   font-weight: bold;
@@ -16,7 +29,8 @@
   padding: 25px;
 }
 
-.button {
-  font-size: x-large;
-  font-weight: bold;
+.result {
+  grid-column: 4;
+  grid-row: 2 / 6;
+  background-color: coral;
 }
