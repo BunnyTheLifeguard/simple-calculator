@@ -32,5 +32,32 @@ body {
 .result {
   grid-column: 4;
   grid-row: 2 / 6;
-  background-color: coral;
+  background-color: yellowgreen;
+  color: white;
+}
+
+.operator {
+  background-color: lightgray;
+  color: white;
+}
+
+.clear {
+  background-color: tomato;
+  color: white;
+}
+
+.display {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+button {
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: snow;
+}
+
+button:hover {
+  color: white;
+  background-color: lightsteelblue;
 }
