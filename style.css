@@ -14,25 +14,21 @@ body {
 .calculator {
   width: 500px;
   height: 600px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.keys {
-  display: grid;
-  width: 500px;
-  height: 500px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
 }
 
 .display {
   border: 1px solid lightgray;
-  grid-column: 1 / 5;
   font-size: xx-large;
   font-weight: bold;
   text-align: right;
   padding: 25px;
+}
+
+.keys {
+  display: grid;
+  height: 75%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .result {
